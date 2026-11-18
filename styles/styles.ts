@@ -14,8 +14,9 @@ export const palette = {
   onAccent: "#FFFDFC",
 };
 
-const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get("window");
-const responsivePadding = Math.max(12, SCREEN_WIDTH * 0.05);
+const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } =
+  Dimensions.get("window");
+const responsivePadding = 16;
 
 export const animatedOpacity = <T extends object>(
   opacity: Animated.Value,

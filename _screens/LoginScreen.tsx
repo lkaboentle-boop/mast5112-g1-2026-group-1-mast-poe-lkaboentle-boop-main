@@ -1,5 +1,15 @@
-import React, { useState, useEffect, useRef } from "react";
-import {Alert,Animated,Platform,ScrollView,Text,Image,View,TextInput,TouchableOpacity,} from "react-native";
+import { useState, useEffect, useRef } from "react";
+import {
+  Alert,
+  Animated,
+  Platform,
+  ScrollView,
+  Text,
+  Image,
+  View,
+  TextInput,
+  TouchableOpacity,
+} from "react-native";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 import type { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import type { RootStackParamList } from "../App";
@@ -30,7 +40,6 @@ export default function LoginScreen({ navigation }: LoginScreenProps) {
         const parsedProfile = JSON.parse(savedProfile) as {
           email?: string;
         };
- 
         if (parsedProfile.email) {
           setEmail(parsedProfile.email);
         }
